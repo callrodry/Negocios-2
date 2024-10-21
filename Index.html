@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHEIN Clone</title>
+    <link rel="stylesheet" href="CSS/Index.css">
+    <script src="dist/bundle.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Moda Pixel</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar...">
+        </div>
+        <div class="icons">
+            <a href="#" title="Usuario">👤</a>
+            <a href="#" title="Carrito">🛒</a>
+            <a href="#" id="favoritesIcon" title="Favoritos">❤️</a>
+            <a href="#" title="Ayuda">❓</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Niños</a>
+        <a href="#">Ropa para hombre</a>
+        <a href="#">Ropa para mujer</a>
+        <a href="#">Ropa interior</a>
+        <a href="#">Joyería y accesorios</a>
+    </nav>
+
+    <div class="content">
+        <div class="filters">
+            <h3>Filtros</h3>
+            <div>
+                <label><input type="checkbox" class="filter" value="hombre"> Ropa de hombre</label>
+                <label><input type="checkbox" class="filter" value="mujer"> Ropa de mujer</label>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product-grid" id="productGrid">
+                <!-- Los productos se añadirán aquí dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

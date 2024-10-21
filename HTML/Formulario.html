@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Producto a Negocios 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, select {
+            margin-bottom: 15px;
+            padding: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Añadir Producto a Negocios 2</h1>
+    <form id="addProductForm">
+        <label for="nombre">Nombre del Producto:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" step="0.01" required>
+
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria" required>
+            <option value="">Selecciona una categoría</option>
+            <option value="ropa">Ropa</option>
+            <option value="accesorios">Accesorios</option>
+            <option value="calzado">Calzado</option>
+            <option value="electronica">Electrónica</option>
+        </select>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+
+        <label for="imagen">URL de la Imagen:</label>
+        <input type="url" id="imagen" name="imagen">
+
+        <label for="stock">Stock:</label>
+        <input type="number" id="stock" name="stock" required>
+
+        <button type="submit">Añadir Producto</button>
+    </form>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
+    
+        // Configuración de Firebase
+        const firebaseConfig = {
+            // Reemplaza esto con tu configuración real de Firebase
+            apiKey: "AIzaSyDQ_Q4CvLPxPwFQap6hpBSx1yB5lE8f6I0",
+            authDomain: "negocios-2-10d3a.firebaseapp.com",
+            projectId: "negocios-2-10d3a",
+            storageBucket: "negocios-2-10d3a.appspot.com",
+            messagingSenderId: "668496458721",
+            appId: "1:668496458721:web:d155a462cb1611e96d58a0",
+            measurementId: "G-WSLQZB37VG"
+        };
+    
+        // Inicializar Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+    
+        document.getElementById('addProductForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const producto = {
+                nombre: document.getElementById('nombre').value,
+                precio: parseFloat(document.getElementById('precio').value),
+                categoria: document.getElementById('categoria').value,
+                descripcion: document.getElementById('descripcion').value,
+                imagen: document.getElementById('imagen').value,
+                stock: parseInt(document.getElementById('stock').value)
+            };
+    
+            try {
+                // Esto creará automáticamente la colección "Negocios 2" si no existe
+                const docRef = await addDoc(collection(db, "Negocios 2"), producto);
+                console.log("Producto añadido con ID: ", docRef.id);
+                alert('Producto añadido con éxito');
+                document.getElementById('addProductForm').reset();
+            } catch (error) {
+                console.error("Error al añadir el producto: ", error);
+                alert('Error al añadir el producto');
+            }
+        });
+    </script>
+</body>
+</html>
