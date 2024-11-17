@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Pixel - Contacto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center px-6 py-4 bg-white">
+        <a href="index.html" class="text-xl font-bold">Moda Pixel</a>
+        <div class="flex items-center space-x-6">
+            <a href="BuscarTienda.html" class="text-gray-600">Buscar en tienda</a>
+            <a href="contact.html" class="text-gray-600">Contacto</a>
+            <a href="#" class="text-gray-600">Iniciar sesión</a>
+            <a href="Comprar.html" class="bg-black text-white px-4 py-2 rounded">Comprar</a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+            <!-- About Section -->
+            <div>
+                <h1 class="text-4xl font-bold mb-8">Acerca de nosotros</h1>
+                <div class="space-y-6">
+                    <p class="text-gray-600">
+                        Somos una marca apasionada por el deporte y la comodidad. Nos especializamos en diseñar y ofrecer ropa deportiva de alta calidad, ideal para acompañarte en tu rendimiento físico, ya sea en el gimnasio, al aire libre o en el día a día.
+                    </p>
+                    <p class="text-gray-600">
+                        Cada prenda está fabricada con materiales de primera, combinando tecnología y estilo para garantizar durabilidad y comodidad. Nuestro objetivo es empoderarte para que alcances tus metas con confianza y estilo.
+                    </p>
+                    <p class="text-gray-600">
+                        Como tienda en línea, nos esforzamos por brindar una experiencia de compra fácil, rápida y segura, con entregas directas hasta tu puerta. Creemos en la inclusión, la sostenibilidad y en inspirar a las personas a llevar una vida activa y saludable.
+                    </p>
+                    <p class="text-gray-600">
+                        ¡Gracias por elegirnos como parte de tu equipo! 💪
+                    </p>
+                </div>
+
+                <!-- Brand Logo -->
+                <div class="mt-12">
+                    <svg class="w-24 h-24 text-black" viewBox="0 0 100 100">
+                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="text-6xl font-bold">M</text>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div>
+                <h2 class="text-3xl font-bold mb-8">Contáctanos</h2>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- First Name -->
+                        <div>
+                            <label for="firstName" class="block text-sm font-medium text-gray-700 mb-1">First name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Jane" 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-black focus:border-black">
+                        </div>
+
+                        <!-- Last Name -->
+                        <div>
+                            <label for="lastName" class="block text-sm font-medium text-gray-700 mb-1">Last name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Smitherton"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-black focus:border-black">
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="email@modafakedom.net"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-black focus:border-black">
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Enter your question or message"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-black focus:border-black"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit" class="w-full bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition-colors">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12 mt-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center">
+                <p class="text-gray-600">Moda Pixel</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-gray-900">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

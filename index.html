@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Pixel - Tu Tienda de Ropa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center px-6 py-4 bg-white">
+        <a href="#" class="text-xl font-bold">Moda Pixel</a>
+        <div class="flex items-center space-x-6">
+            <a href="BuscarTienda.html" class="text-gray-600">Buscar en tienda</a>
+            <a href="contact.html" class="text-gray-600">Contacto</a>
+            <a href="#" class="text-gray-600">Iniciar sesión</a>
+            <a href="Comprar.html" class="bg-black text-white px-4 py-2 rounded">Comprar</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-center py-16">
+        <h1 class="text-6xl font-bold mb-4">MODA PIXEL</h1>
+        <h2 class="text-2xl font-medium mb-8">LLEGÓ TU MOMENTO PARA QUE<br>MEJORES TU ESTILO</h2>
+    </header>
+
+    <!-- Promotion Banner -->
+    <section class="bg-red-600 text-white py-16 text-center mb-16">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-6xl italic mb-4">Hasta 50%</h2>
+            <p class="text-4xl italic mb-6">de descuento</p>
+            <a href="Comprar.html">
+                <button class="bg-white text-black px-8 py-2 font-medium hover:bg-gray-100 transition-colors">COMPRAR</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Trending Products -->
+    <section class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl font-bold mb-8">Ropa en Tendencia</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Product 1 -->
+            <div class="product">
+                <img  src="./assets/images/Sudaderas.png" alt="Sudadera MVP" class="w-full h-64 object-cover mb-4">
+                <h3 class="font-bold mb-2">Sudadera MVP</h3>
+                <p class="text-gray-600">Sudadera de cierre completo para hombre</p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="./assets/images/pants.png" alt="Pixel Pants" class="w-full h-64 object-cover mb-4">
+                <h3 class="font-bold mb-2">Pixel Pants</h3>
+                <p class="text-gray-600">Pants para hombre</p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="./assets/images/playeras classics.png" alt="Classic" class="w-full h-64 object-cover mb-4">
+                <h3 class="font-bold mb-2">Classic</h3>
+                <p class="text-gray-600">Prendas deportivas de diferentes colores</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Uniformes Deportivos Section -->
+    <section class="max-w-6xl mx-auto px-6 mt-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Uniformes deportivos</h2>
+                <h3 class="font-medium mb-2">Diseños de uniformes</h3>
+                <p class="text-gray-600 mb-4">Diseños personalizados de uniformes de fútbol</p>
+                
+                <div class="mb-6">
+                    <h3 class="font-medium mb-2">Pedido</h3>
+                    <p class="text-gray-600 mb-4">Envíe la imagen con su diseño, los nombres, el número y la cantidad de uniformes requeridos. Se requiere un pago anticipado del 50% para aceptar el pedido.</p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="font-medium mb-2">Entrega</h3>
+                    <p class="text-gray-600 mb-4">Entrega aproximada en 30 días hábiles. Proporcionaré los datos de entrega. (Se cobrará el envío a domicilio.)</p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <button class="bg-black text-white px-6 py-2">Comprar</button>
+                    <button class="bg-gray-200 px-6 py-2">Añadir al carrito</button>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/images/Uniformes.png" alt="Uniforme Deportivo" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Niño/a Section -->
+    <section class="max-w-6xl mx-auto px-6 mt-16">
+        <h2 class="text-2xl font-bold mb-8">Niño/a</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Sportswear Pixel -->
+            <div class="product">
+                <img src="./assets/images/Sportswear Pixel.png" alt="Sportswear Pixel" class="w-full h-96 object-cover mb-4 rounded-lg">
+                <h3 class="font-bold mb-2">Sportswear Pixel</h3>
+                <p class="text-gray-600">Sudadera para niños talla grande dos colores disponibles</p>
+            </div>
+
+            <!-- Kid pants -->
+            <div class="product">
+                <img src="./assets/images/Kid pants.png" alt="Kid pants" class="w-full h-96 object-cover mb-4 rounded-lg">
+                <h3 class="font-bold mb-2">Kid pants</h3>
+                <p class="text-gray-600">Pants completo para niño</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="max-w-6xl mx-auto px-6 mt-16">
+        <h2 class="text-2xl font-bold mb-8">Comentarios y sugerencias</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <!-- Review 1 -->
+            <div class="flex items-start space-x-4">
+                <img src="/api/placeholder/40/40" alt="Avatar" class="w-10 h-10 rounded-full">
+                <div>
+                    <p class="font-bold mb-1">Name</p>
+                    <p class="text-gray-600 mb-2">"Precios muy rarooooooos"</p>
+                    <p class="text-gray-500">Description</p>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="flex items-start space-x-4">
+                <img src="/api/placeholder/40/40" alt="Avatar" class="w-10 h-10 rounded-full">
+                <div>
+                    <p class="font-bold mb-1">Name</p>
+                    <p class="text-gray-600 mb-2">"Satisfecho con mi pedido, rápida entrega"</p>
+                    <p class="text-gray-500">Description</p>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="flex items-start space-x-4">
+                <img src="/api/placeholder/40/40" alt="Avatar" class="w-10 h-10 rounded-full">
+                <div>
+                    <p class="font-bold mb-1">Name</p>
+                    <p class="text-gray-600 mb-2">"La calidad de la ropa está 10 de 10"</p>
+                    <p class="text-gray-500">Description</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="bg-gray-100 p-8 rounded-lg flex justify-between items-center mb-16">
+            <h2 class="text-3xl font-bold">¡COMPRAR AHORA!</h2>
+            <button class="bg-black text-white px-8 py-3 rounded">Comprar</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold mb-4">Moda Pixel</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-gray-900">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M21.543 7.104c.015.211.015.423.015.636 0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041 4.93 4.93 0 0 1-4.6-3.42 4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148a13.98 13.98 0 0 0 10.15 5.144 4.929 4.929 0 0 1 8.39-4.49 9.868 9.868 0 0 0 3.128-1.196 4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-4">Ropa</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Sudaderas</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Playeras</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Pants</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-4">Destacados</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">uniformes deportivos</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-4">eM3x/s</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Sudaderas</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Pants completos</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Playeras</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t pt-8">
+                <p class="text-center text-gray-600">© 2024 Moda Pixel. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
